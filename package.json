@@ -19,5 +19,5 @@
     "eslint-plugin-react": "^6.10.3"
   }
 
-  {"extends": "airbnb"}
+  ".eslintrc": {"extends": "airbnb"}
 }
