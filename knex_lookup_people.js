@@ -18,12 +18,12 @@ knex('famous_people').where('first_name', input).orWhere('last_name', input).asC
   if(err){
     console.log(err)
   }
-famousPeople(rows);
+famousPeople(rows)
 });
-
 knex.destroy(()=> {
   console.log('closed connection')
 });
+
 
 var famousPeople = function (rows){
   var date = rows[0].birthdate.getDate();
